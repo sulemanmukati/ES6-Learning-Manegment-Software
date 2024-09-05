@@ -4,7 +4,7 @@ function Footer() {
     return (
         <>
             <div className="mt-4">
-                {/* <p>Icons by <a href="https://lordicon.com/" target="_blank">Lordicon</a></p> */}
+               
                 <p className="text-muted text-center">&copy; Copyrights school software {year}. All rights reserved. Developed by <a href="https://github.com/sulemanmukati" className="text-muted">Suleman Mukati</a></p>
             </div>
         </>

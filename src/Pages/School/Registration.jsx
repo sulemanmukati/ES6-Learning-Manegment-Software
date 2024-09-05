@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../../Layout/Sidebar"
-import { deleteData, getData, setData } from "../../Config/FirebaseMethods";
-import { toastGreen, toastRed } from "../../Components/My Toasts";
 import FloatingInput from "../../Components/FloatingInput";
 import { Row, Col } from "react-bootstrap";
 import MyButton from "../../Components/MyButton";
@@ -40,50 +38,10 @@ function Registration() {
 
     const handleSave = (e) => {
         e.preventDefault();
-        // setPageLoader(true);
-        // const finalObj = { ...schoolData, registrationDate: JSON.stringify(new Date()) };
-        // console.log(finalObj)
-        // setData("School", finalObj).then(() => {
-        //     handleReset();
-        //     setPageLoader(false);
-        //     fetchData()
-        //     toastGreen("School has been successfully registered!");
-        // }).catch((err) => {
-        //     console.log(err);
-        //     setPageLoader(false);
-        //     toastRed("Failed to register school. Please try again.");
-        // });
+   
     };
 
-    // const handleDelete = () => {
-    //     setPageLoader(true);
-    //     console.log(isSchoolRegistered[0].id)
-    //     deleteData("School", isSchoolRegistered[0].id).then(() => {
-    //         setPageLoader(false);
-    //         setIsSchoolRegistered(false)
-    //         toastGreen("School has been successfully registered!");
-    //     }).catch((err) => {
-    //         console.log(err);
-    //         setPageLoader(false);
-    //         toastRed("Failed to register school. Please try again.");
-    //     });
-    // };
-
-    // const handleReset = () => {
-    //     setSchoolData({
-    //         schoolName: '',
-    //         schoolLogo: '',
-    //         schoolAddress: '',
-    //         phoneNumber: '',
-    //         schoolEmail: '',
-    //         website: '',
-    //         principalName: '',
-    //         principalEmail: '',
-    //         principalPhone: '',
-    //         schoolTimings: '',
-    //     });
-    // };
-
+   
     const content = () => {
         return (
             <>

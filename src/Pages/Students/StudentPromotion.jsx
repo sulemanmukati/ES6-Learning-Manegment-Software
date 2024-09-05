@@ -1,16 +1,10 @@
 import { useEffect, useState } from 'react'
 import Sidebar from '../../Layout/Sidebar'
-import { getData, setData } from '../../Config/FirebaseMethods'
-import MyLoader from '../../Components/MyLoader'
-import MySelect from '../../Components/MySelect'
-import FloatingInput from '../../Components/FloatingInput'
-import { Col, Row } from 'react-bootstrap'
-import { toastGreen, toastRed } from '../../Components/My Toasts'
 import MyButton from '../../Components/MyButton'
 import Tables from '../../Components/Tables'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../../Config/FirebaseConfig'
-import { Typography } from '@mui/material'
+
 import { useNavigate } from 'react-router-dom'
 
 function StudentPromotion() {

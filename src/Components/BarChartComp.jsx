@@ -8,14 +8,7 @@ import Radio from '@mui/material/Radio';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { axisClasses } from '@mui/x-charts/ChartsAxis';
 
-// type TickParamsSelectorProps = {
-//     tickPlacement: 'end' | 'start' | 'middle' | 'extremities';
-//     tickLabelPlacement: 'tick' | 'middle';
-//     setTickPlacement: React.Dispatch<
-//         React.SetStateAction<'end' | 'start' | 'middle' | 'extremities'>
-//     >;
-//     setTickLabelPlacement: React.Dispatch<React.SetStateAction<'tick' | 'middle'>>;
-// };
+
 
 TickParamsSelector
 function TickParamsSelector({

@@ -1,79 +1,10 @@
-import { Col, Row } from "react-bootstrap";
-import MyButton from "../../Components/MyButton";
-import MyLoader from "../../Components/MyLoader";
-import MySelect from "../../Components/MySelect";
+
 import Sidebar from "../../Layout/Sidebar";
-import FloatingInput from "../../Components/FloatingInput";
-import { toastGreen, toastRed } from "../../Components/My Toasts";
-import { getData, setData } from "../../Config/FirebaseMethods";
-import { useEffect, useState } from "react";
+
 import { Box, Grid, Paper, Typography } from "@mui/material";
 
 function AddExam() {
     const classes = Array.from({ length: 10 }, (_, i) => `Class ${i + 1} Results`);
-    // const [examData, setExamData] = useState({
-    //     examName: '',
-    //     examClass: '',
-    //     examSubject: '',
-    //     examDate: '',
-    //     examDuration: '',
-    //     totalMarks: '',
-    //     passingMarks: '',
-    //     examStatus: '',
-    // });
-    // const [classesName, setClassesName] = useState([]);
-    // const [subjectsName, setSubjectsName] = useState([]);
-    // const [loader, setLoader] = useState(false);
-
-    // const fetchData = () => {
-    //     setLoader(true);
-    //     getData("Classes").then((res) => {
-    //         setClassesName(res.map((item) => item.ClassName));
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     });
-
-    //     getData("Subjects").then((res) => {
-    //         setSubjectsName(res.map((item) => item.SubjectName));
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     }).finally(() => {
-    //         setLoader(false);
-    //     });
-    // };
-
-    // useEffect(() => {
-    //     fetchData();
-    // }, []);
-
-    // const handleReset = () => {
-    //     setExamData({
-    //         examName: '',
-    //         examClass: '',
-    //         examSubject: '',
-    //         examDate: '',
-    //         examDuration: '',
-    //         totalMarks: '',
-    //         passingMarks: '',
-    //         examStatus: '',
-    //     });
-    // }
-
-
-    // const handleSave = (e) => {
-    //     e.preventDefault();
-    //     setLoader(true);
-    //     console.log(examData)
-    //     setData("Exams", examData).then(() => {
-    //         handleReset()
-    //         toastGreen("Exam has been successfully added!");
-    //     }).catch((err) => {
-    //         console.log(err);
-    //         toastRed("Failed to add exam. Please try again.");
-    //     }).finally(() => {
-    //         setLoader(false);
-    //     });
-    // };
     const content = () => {
         return (
             <Box

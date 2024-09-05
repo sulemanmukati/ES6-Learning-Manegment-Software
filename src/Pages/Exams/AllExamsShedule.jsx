@@ -1,16 +1,7 @@
-import MyLoader from "../../Components/MyLoader";
+
 import Sidebar from "../../Layout/Sidebar"
-import Grid from "../../Components/MyGrid"
-import { useEffect, useState } from "react";
-import { deleteData, getData, setData } from "../../Config/FirebaseMethods";
-import { toastGreen, toastRed } from "../../Components/My Toasts";
-import { Box, Paper, Tooltip, Typography } from "@mui/material";
+import { Box, Paper,  Typography } from "@mui/material";
 import MyButton from "../../Components/MyButton";
-import ConfirmModal from "../../Components/ConfirmModal";
-import MySelect from "../../Components/MySelect";
-import { Col, Row } from "react-bootstrap";
-import FloatingInput from "../../Components/FloatingInput";
-import MyModal from "../../Components/MyModal";
 
 function AllExamsSchedule() {
   const examData = [
@@ -181,122 +172,7 @@ function AllExamsSchedule() {
   return (
     <>
       <Sidebar element={content()} breadcrumbLink="Exams" pageName="All Exams Schedule" breadcrumbNestedLink="All Exams" />
-      {/* <MyModal title="Edit Exam Details" height="50vh" onClose={handleCloseModal} isOpen={editIsOpen}
-        body={(
-          <>
-            <form onSubmit={handleEdit}>
-              <div className='mb-0'>
-                <h3 className='fs-5 mb-0'>Exam Information</h3> <hr className='mt-2' />
-              </div>
-              <Row>
-                <Col md={12} lg={6}>
-                  <FloatingInput
-                    label="Exam Name"
-                    required={true}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examName: e.target.value })}
-                    placeholder="Edit Exam Name"
-                    myValue={getValue("examName")}
-                    type="text"
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <MySelect
-                    label="Class"
-                    required={true}
-                    defaultValue="Please Select Class"
-                    value={getValue("examClass")}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examClass: e.target.value })}
-                    options={classesName}
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <MySelect
-                    label="Subject"
-                    required={true}
-                    defaultValue="Please Select Subject"
-                    value={getValue("examSubject")}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examSubject: e.target.value })}
-                    options={subjectsName}
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <FloatingInput
-                    label="Date"
-                    required={true}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examDate: e.target.value })}
-                    placeholder="Edit Date"
-                    myValue={getValue("examDate")}
-                    type="date"
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <FloatingInput
-                    label="Duration (in minutes)"
-                    required={true}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examDuration: e.target.value })}
-                    placeholder="Edit Duration"
-                    myValue={getValue("examDuration")}
-                    type="number"
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <FloatingInput
-                    label="Total Marks"
-                    required={true}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, totalMarks: e.target.value })}
-                    placeholder="Edit Total Marks"
-                    myValue={getValue("totalMarks")}
-                    type="number"
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <FloatingInput
-                    label="Passing Marks"
-                    required={true}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, passingMarks: e.target.value })}
-                    placeholder="Edit Passing Marks"
-                    myValue={getValue("passingMarks")}
-                    type="number"
-                  />
-                </Col>
-                <Col md={12} lg={6}>
-                  <MySelect
-                    label="Status"
-                    required={true}
-                    defaultValue="Please Select Status"
-                    value={getValue("examStatus")}
-                    onChange={(e) => setEditedExamObj({ ...editedExamObj, examStatus: e.target.value })}
-                    options={["Scheduled", "Completed", "Canceled"]}
-                  />
-                </Col>
-              </Row>
-              <div className="text-end mt-2">
-                <MyButton
-                  bgColor="var(--darkBlue)"
-                  hoverBgColor="var(--orange)"
-                  className="me-2"
-                  btnValue={(<div className="d-flex align-items-center gap-2">Update <lord-icon src="https://cdn.lordicon.com/dangivhk.json" trigger="hover" style={{ width: "37px", height: "37px" }} /></div>)}
-                  type="submit"
-                />
-              </div>
-              {actionLoader && <MyLoader />}
-            </form>
-          </>
-        )}
-        footer={(
-          <div>
-            <MyButton bgColor="var(--darkBlue)" hoverBgColor="var(--orange)" className="me-2" btnValue="Close" onClick={handleCloseModal} />
-          </div>
-        )} />
-      <ConfirmModal title={`Are you sure you want to delete ${examObj.examName} for class ${examObj.examClass}`}
-        icon={(<lord-icon src="https://cdn.lordicon.com/jxzkkoed.json" trigger="hover" style={{ width: "120px", height: "120px" }} />)}
-        onClose={handleCloseModal} isOpen={delIsOpen}
-        body={(
-          <>
-            <MyButton bgColor="var(--red)" hoverBgColor="rgb(139, 0, 0)" className="me-4" btnValue="Yes, Delete" onClick={() => { handleCloseModal(); handleDelete() }} />
-            <MyButton bgColor="var(--green)" hoverBgColor="#00943e" btnValue="No, Cancel" onClick={handleCloseModal} />
-          </>
-        )} /> */}
+      
     </>
   );
 }

@@ -1,12 +1,10 @@
 import {  FormControl, FormControlLabel, FormLabel, Paper, Radio, RadioGroup, TextField, Typography } from "@mui/material"
 import Sidebar from "../../Layout/Sidebar"
-// import ControlledRadioButtonsGroup from "../../Components/ControlledRatioButtonsGroup"
+
 import MyButton from "../../Components/MyButton"
 import { useState } from "react"
 import { addDoc, collection } from "firebase/firestore"
 import { db } from "../../Config/FirebaseConfig"
-import ControlledRadioButtonsGroup from "../../Components/ControlledRatioButtonsGroup"
-// import { FormControl } from "react-bootstrap"
 
 
 function AddSubject() {

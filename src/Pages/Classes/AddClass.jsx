@@ -1,11 +1,5 @@
-import { useEffect, useState } from "react"
-import { Row, Col } from 'react-bootstrap';
-import FloatingInput from "../../Components/FloatingInput"
-import MyLoader from "../../Components/MyLoader"
-import { getData, setData } from "../../Config/FirebaseMethods"
+import {  useState } from "react"
 import Sidebar from "../../Layout/Sidebar"
-import { toastGreen, toastRed } from "../../Components/My Toasts"
-import MySelect from "../../Components/MySelect";
 import MyButton from "../../Components/MyButton";
 import { Paper, TextField, Typography } from "@mui/material";
 import ControlledRadioButtonsGroup from "../../Components/ControlledRatioButtonsGroup";
@@ -19,7 +13,7 @@ function AddClass() {
   const [fatherName,SetFatherName]=useState()
   const [Email,SetEmail]=useState()
   const [classes,SetClasses]=useState()
-  // const [userData, setUserData] = useState([]);
+
  
 
   const studentobj ={

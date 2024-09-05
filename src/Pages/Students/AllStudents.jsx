@@ -41,26 +41,7 @@ const handleForm=async (e)=>{
   SetClasses('')
 }
 
-// useEffect(() => {
-//   getData();
-// }, );
 
-//   Data get from firebase Firestore Database
-
-// const getData = async () => {
-//   try {
-//     const arr = [];
-//     const getData = await getDocs(collection(db, "students"));
-
-//     getData.forEach((doc) => {
-//       arr.push({ ...doc.data(), id: doc.id });
-//     });
-
-//     setUserData(arr);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
 
 const contant =()=>{
   return(

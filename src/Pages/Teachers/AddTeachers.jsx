@@ -2,7 +2,7 @@
 import { Paper, TextField, Typography } from '@mui/material';
 import Sidebar from '../../Layout/Sidebar'
 
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import ControlledRadioButtonsGroup from '../../Components/ControlledRatioButtonsGroup';
 import MyButton from '../../Components/MyButton';
 import { addDoc, collection } from 'firebase/firestore';
@@ -15,7 +15,7 @@ function AddTeachers() {
     const [lastName,SetLastName]=useState()
     const [Email,SetEmail]=useState()
     const [classes,SetClasses]=useState()
-    // const [userData, setUserData] = useState([]);
+ 
    
   
     const studentobj ={
@@ -41,26 +41,6 @@ function AddTeachers() {
     SetClasses('')
   }
   
-  // useEffect(() => {
-  //   getData();
-  // }, );
-  
-  // //   Data get from firebase Firestore Database
-  
-  // const getData = async () => {
-  //   try {
-  //     const arr = [];
-  //     const getData = await getDocs(collection(db, "teacher"));
-  
-  //     getData.forEach((doc) => {
-  //       arr.push({ ...doc.data(), id: doc.id });
-  //     });
-  
-  //     setUserData(arr);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
   
   const content =()=>{
     return(
