@@ -15,7 +15,6 @@ import { HiUserAdd } from "react-icons/hi";
 import CustomList from "../Components/CustomList";
 import { Link, useNavigate } from "react-router-dom";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import schoolLogo from "../Images/school-logo.png";
 import Footer from "./Footer";
 import { getData, signoutUser } from "../Config/FirebaseMethods";
 import { toastGreen, toastRed } from "../Components/My Toasts";
@@ -209,10 +208,10 @@ export default function Sidebar(props) {
             </IconButton>
           </DrawerHeader>
           <List className="pb-5">
-            <div className="mx-auto mb-2" style={{ maxWidth: "180px" }}>
+            {/* <div className="mx-auto mb-2" style={{ maxWidth: "180px" }}>
               <img src={schoolLogo} className='img-fluid' alt="" />
             </div>
-           
+            */}
             <CustomList onTabClick={handleTabClick} activeTab={activeTab} />
           </List>
         </Drawer>

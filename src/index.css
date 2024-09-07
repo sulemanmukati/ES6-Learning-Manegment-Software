@@ -9,13 +9,13 @@ body {
 }
 
 :root {
-    --orange : #ffa901;
-    --darkBlue : #042954;
+    --orange :#99b3a6;
+    --darkBlue :green;
     --gray : #b6bdc5;
     --bodyGray : #f0f1f3;
     --green : #00c853;
     --red : rgb(212, 0, 0);
-    --blackBlue : #051f3e;
+    --blackBlue : #0c5d2e;
 }
 
 .text-orange {
